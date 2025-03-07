@@ -47,6 +47,12 @@ somehow when entered at many command shells.
 
 Prefix a keyword with a tilde (~) to still run it, but ignore the results.
 
+Tests can also be filtered based on specific features using the `feat:<name>`
+prefix. For example, `feat:debug` ensures that only tests requiring this
+feature are executed. To exclude tests containing a specific feature, use
+`!feat:debug`, while `~feat:debug` allows them to run but ignores their
+results.
+
 # OUTPUT
 
 When running without `-s` (short output), for instance when running
